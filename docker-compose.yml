@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  tests:
+    build: .
+    container_name: playwright-tests
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+    env_file:
+      - .env

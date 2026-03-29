@@ -1,0 +1,20 @@
+{
+  "name": "wiki-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "npx playwright test --ui",
+    "test:user": "npx playwright test --grep @USER"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
